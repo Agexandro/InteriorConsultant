@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     color: white;
@@ -21,7 +21,7 @@ ul {
 
 ul li {
     display: inline-flex;
-    padding-left: 40px;
+    padding-left: 76px;
 }
 
 Ul li a {
@@ -32,7 +32,7 @@ Ul li a {
     line-height: 22px;
 }
 
-Ul li a:hover{
+Ul li a:hover {
     font-size: 20px;
     border-bottom: 2px solid white;
 }
@@ -41,7 +41,9 @@ Ul li a:hover{
     border-bottom: 2px solid white;
 }
 
-h3{float: left}
+h3 {
+    float: left
+}
 
 h3:hover {
     border-bottom: 2px solid white;
@@ -56,7 +58,7 @@ h3:hover {
     border: 1px solid white;
     width: 86px;
     height: 16px;
-    padding:8px;
+    padding: 8px;
     float: left;
 }
 
@@ -82,7 +84,7 @@ h3:hover {
     padding: 2%;
 }
 
-.ic-1-5  img {
+.ic-1-5 img {
     border-radius: 50%;
 }
 
@@ -93,7 +95,7 @@ h3:hover {
     line-height: 61px;
 }
 
-.column.s1 p{
+.column.s1 p {
     width: 410px;
     height: 145px;
     font-family: Montserrat;
@@ -108,6 +110,10 @@ h3:hover {
     padding-bottom: 8%;
 }
 
+.columns.end {
+    margin-top: 200px;
+}
+
 img {
     width: 100%;
 }
@@ -117,7 +123,7 @@ footer {
     padding-top: 40vh;
 }
 
-footer p{
+footer p {
     font-family: Montserrat;
     font-weight: 500;
     font-size: 14px;
@@ -128,6 +134,7 @@ footer p{
 .card {
     position: absolute;
     background-color: black;
+    box-shadow: 0px 2px 6px black;
     width: 300px;
     height: 120px;
     bottom: -90px;
@@ -160,106 +167,93 @@ footer p{
     height: 62px;
 }
 
-
 nav #menu {
     display: none;
 }
 
-@media only screen and (max-width:950px){
-    div[class *="col-"]{
+@media only screen and (max-width:950px) {
+    div[class *="col-"] {
         width: 100%;
     }
-
-#name {
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
+    #name {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .card {
+        right: 10px;
+    }
+    #ocupation {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    #desc {
+        font-family: Lora;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .column.s1 p {
+        font-family: Montserrat;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        width: 250px;
+        height: 85px;
+        padding-bottom: 10%;
+    }
+    .column h1 {
+        font-family: Lora;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+    }
+    nav ul li {
+        padding: 0;
+    }
+    nav ul {
+        background-color: black;
+        z-index: 1;
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        padding-top: 20vh;
+    }
+    nav #menu {
+        position: fixed;
+        z-index: 2;
+        display: block;
+        right: 40px;
+        text-decoration: none;
+        top: 40;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10%;
+    }
 }
 
-.card {
-    right: 10px;
-}
-
-#ocupation {
-
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-}
-
-#desc {
-    font-family: Lora;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 23px;
-}
-
-.column.s1 p{
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    width: 250px;
-    height: 85px;
-    padding-bottom: 10%;
-}
-
-.column h1 {
-    font-family: Lora;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 46px;
-}
-
-nav ul{
-    background-color: black;
-    z-index: 1;
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    top: 0;
-    left: 0;
-    padding-top: 20vh;
-}
-
-nav #menu {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    right: 40px;
-    text-decoration: none;
-    top: 40;
-}
-
-nav ul li{
-    display: block;
-    margin-top: 10%;
-}
-}
-
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 425px) {
     .card {
         width: 70%;
     }
-
     #desc {
         width: 100%;
     }
-
-    .column.s1 p{
-        overflow: hidden;  
+    .column.s1 p {
+        overflow: hidden;
     }
-
-    body{
-        margin: 5px;
-        padding: 0;
+    body {
+        padding: 20px;
     }
-
     nav #menu {
-        right: 5px;
+        right: 20px;
     }
 }
