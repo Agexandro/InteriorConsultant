@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://pbs.twimg.com/media/Es716f5W8AIHyS9?format=jpg&name=large)
+![screenshot](https://github.com/Agexandro/InteriorConsultant/tree/master/images/screen.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
